@@ -1,7 +1,0 @@
-SELECT SUM(\
-		(CASE WHEN Result LIKE 'W%' AND Team='MIL' THEN 1 ELSE 0 END)) AS Wins,\
-		SUM(\
-		(CASE WHEN Result LIKE 'L%' AND Team='MIL' THEN 1 ELSE 0 END)) AS Losses\
-FROM 'current_season_team_game_results.csv'\
-WHERE Team='MIL'\
-	;}
