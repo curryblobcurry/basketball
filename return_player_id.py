@@ -40,7 +40,6 @@ def return_player_id(my_player):
     # The loop checks the first name, and if that's a match, then the last name, and if both these match,
     # we print out the player name and their associated ID. We also assign that ID to player_id.
     #
-    # I need to figure out how to handle a name that's not in the list of players.
     while i<25:
         if i!=24:
             if response_data["data"][i]["first_name"]==first_name:
