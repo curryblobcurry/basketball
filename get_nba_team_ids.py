@@ -6,9 +6,8 @@ Created on Sun Apr 21 17:45:04 2024
 @author: robcary
 """
 
-
+# This function takes an NBA team and populates a list with player IDs for that team.
 def get_nba_team_player_ids(team):
-#from return_player_id import return_p_id
     import requests
 
     url = 'http://api.balldontlie.io/v1/players'
@@ -20,9 +19,6 @@ def get_nba_team_player_ids(team):
     response = requests.get(url, headers=headers)
 
     response_data = response.json()
-
-    #team = 'Milwaukee Bucks'
-    #team = input('Please enter an NBA Team name: ')
 
     i = 0
     cursor = 0
