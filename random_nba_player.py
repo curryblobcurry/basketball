@@ -10,7 +10,7 @@ headers = {
     }
 
 # Create a variable y that will be a random integer between 0 and 600, in 'steps' of 25
-y = random.randrange(0,600,25)
+y = random.randrange(0,750,25)
 
 # Create a variable response that is an API GET request with the above header, and the cursor
 # parameter set to y to give us a 'random' page of 25 players
